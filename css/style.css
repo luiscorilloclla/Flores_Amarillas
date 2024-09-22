@@ -70,7 +70,7 @@ body{
 }
 
 .description{ 
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
 }
 
@@ -80,18 +80,37 @@ body{
     color: #111;
 }
 
-@media screen and (max-width:574px){
-    .greetings{
+@media screen and (max-width: 574px) {
+    .greetings {
         display: block;
-        font-size: 4rem;
+        font-size: 3.5rem; /* Tamaño ajustado para móviles */
         font-weight: 800;
-        text-align: center;
+        text-align: center; /* Centraliza el texto */
+        padding: 10px 20px; /* Reduce el padding para mejor ajuste en móviles */
+        margin: 0 auto; /* Asegura que el elemento esté centrado */
+        width: 100%; /* Ocupa todo el ancho del contenedor */
+        box-sizing: border-box; /* Incluye padding dentro del ancho */
     }
-    .description{
-        font-size: 2rem;
+
+    .description {
+        font-size: 1.3rem; /* Tamaño ajustado para mejorar legibilidad en móviles */
+        text-align: center; /* Centraliza el texto */
+        padding: 0 15px; /* Asegura que no quede muy pegado a los bordes */
+        margin-bottom: 15px; /* Añade espacio debajo del texto */
+        width: 100%; /* Asegura que la descripción ocupe todo el ancho */
+        box-sizing: border-box; /* Incluye el padding dentro del ancho */
     }
-    
-    .button a{
+
+    .button a {
         font-size: 1rem;
+        text-align: center; /* Asegura que el texto dentro del botón esté centrado */
+        display: inline-block; /* Hace que el enlace se comporte como un botón */
+        padding: 10px 20px; /* Añade espacio dentro del botón para mejor visualización */
+        background-color: #ff0000; /* Color de fondo para el botón */
+        color: #fff; /* Color del texto */
+        text-decoration: none; /* Quita el subrayado */
+        border-radius: 5px; /* Bordes redondeados para un diseño más amigable */
+        margin: 10px auto; /* Añade espacio alrededor y centraliza el botón */
+        width: fit-content; /* El botón se ajusta al contenido */
     }
 }
