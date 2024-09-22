@@ -70,23 +70,30 @@ body{
 }
 
 .description {
-    font-size: 1.5rem;
+    font-size: 1.8rem; /* Tamaño adecuado para pantallas grandes */
     margin-bottom: 20px;
     text-align: center; /* Centrar el texto */
+    font-family: 'Arial', sans-serif; /* Fuente general */
+    color: #ffffff; /* Color rosa vibrante */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el desbordamiento si es necesario */
+    text-overflow: ellipsis; /* Agrega "..." si el texto es demasiado largo */
+    padding: 0 10px; /* Relleno lateral para asegurar que no haya cortes en el texto */
 }
 
-/* Para pantallas pequeñas (móviles) */
-@media (max-width: 576px) {
+/* Estilo específico para pantallas de iPhone 14 Pro (375px de ancho) */
+@media (max-width: 390px) {
     .description {
-        font-size: 1.2rem;
+        font-size: 1.4rem; /* Ajustar tamaño para pantallas de iPhone 14 Pro */
         margin-bottom: 15px;
+        color: #ffffff; /* Color más claro en pantallas pequeñas */
     }
 }
 
-/* Para pantallas medianas (tabletas) */
+/* Para tabletas */
 @media (max-width: 768px) {
     .description {
-        font-size: 1.3rem;
+        font-size: 1.6rem; /* Ajuste para tabletas */
         margin-bottom: 18px;
     }
 }
@@ -94,12 +101,10 @@ body{
 /* Para pantallas grandes (escritorio) */
 @media (min-width: 992px) {
     .description {
-        font-size: 1.6rem;
+        font-size: 2rem;
         margin-bottom: 25px;
     }
 }
-
-
 
 .button a{
     text-decoration: none;
