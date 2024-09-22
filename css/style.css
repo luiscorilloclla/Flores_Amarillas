@@ -69,46 +69,10 @@ body{
     animation-delay: 1s;
 }
 
-.description {
-    font-size: 1.8rem; /* Tamaño para pantallas grandes */
+.description{ 
+    font-size: 1.2rem;
     margin-bottom: 20px;
-    text-align: center; /* Centrar el texto */
-    font-family: 'Arial', sans-serif; /* Fuente general */
-    color: #ffffff; /* Color rosa vibrante */
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    overflow: hidden; /* Oculta el desbordamiento si es necesario */
-    text-overflow: ellipsis; /* Agrega "..." si el texto es demasiado largo */
-    padding: 0 10px; /* Relleno lateral */
-    width: 100%; /* Asegura que el contenedor use todo el ancho */
-    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
 }
-
-/* Para móviles (como el iPhone 14 Pro) */
-@media (max-width: 576px) {
-    .description {
-        font-size: 1.2rem; /* Achica el texto en pantallas pequeñas */
-        margin-bottom: 10px;
-        padding: 0 5px; /* Menor padding en pantallas móviles */
-        color: #ffffff; /* Color más claro para móviles */
-    }
-}
-
-/* Para pantallas medianas (tabletas) */
-@media (max-width: 768px) {
-    .description {
-        font-size: 1.6rem;
-        margin-bottom: 15px;
-    }
-}
-
-/* Para pantallas grandes (escritorio) */
-@media (min-width: 992px) {
-    .description {
-        font-size: 2rem;
-        margin-bottom: 25px;
-    }
-}
-
 
 .button a{
     text-decoration: none;
