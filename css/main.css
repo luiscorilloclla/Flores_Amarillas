@@ -40,16 +40,26 @@ body {
 
 }
 .titulo {
-  margin-bottom: 180px;
-  font-family: "poppins", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: yellow;
-  position: absolute;
   font-weight: bold;
   letter-spacing: 10px;
-  opacity: 0;
-  animation: fadeIn 3s ease-in-out forwards;
   text-align: center;
+  opacity: 0; /* Empieza invisible */
+  animation: fadeIn 3s ease-in-out forwards;
+  
+  /* Centrando horizontal y verticalmente */
+  position: absolute;
+  top: 20%; /* Posiciona en la mitad verticalmente */
+  left: 50%; /* Posiciona en la mitad horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta para que esté perfectamente centrado */
+  
+  /* Opcionales para mejorar legibilidad y estilo */
+  margin: 0;
+  width: 100%; /* Ocupar todo el ancho si lo deseas centrado en pantallas pequeñas */
+  box-sizing: border-box;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
